@@ -2,4 +2,4 @@
 sidebar_position: 3
 ---
 
-# Titulo del tema
+# Principios de Clean Architecture
