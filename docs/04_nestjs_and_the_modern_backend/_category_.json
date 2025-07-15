@@ -1,0 +1,8 @@
+{
+    "label": "NestJS y Backend moderno",
+    "position": 5,
+    "link": {
+        "type": "generated-index",
+        "description": "NestJS es un framework de Node.js para construir aplicaciones del lado del servidor (backend) robustas y altamente escalables. Se inspira en conceptos de Angular, por eso su arquitectura basada en módulos, controladores y servicios resulta muy familiar si ya trabajas con Angular."
+    }
+}

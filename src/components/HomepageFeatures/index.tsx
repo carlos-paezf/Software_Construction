@@ -16,7 +16,7 @@ const FeatureList: FeatureItem[] = [
     description: (
       <>
         Documentación abierta para estudiantes, profesores y entusiastas de la
-        informática. Aprende sobre Programación Orientada a Objetos en un
+        informática. Aprende sobre Construcción de Software en un
         entorno colaborativo y accesible.
       </>
     ),

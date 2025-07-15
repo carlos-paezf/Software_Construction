@@ -1,0 +1,8 @@
+{
+    "label": "Tools, deployment, and security",
+    "position": 9,
+    "link": {
+        "type": "generated-index",
+        "description": "La tríada de herramientas, despliegue y seguridad no solo sostiene la infraestructura de tu aplicación, sino que define cuán confiable, escalable y protegida será."
+    }
+}

@@ -109,9 +109,9 @@ const config: Config = {
                         },
                     ],
                 },
-                {
+                /*{
                     title: 'Community',
-                    /* items: [
+                     items: [
                         {
                             label: 'Stack Overflow',
                             href: 'https://stackoverflow.com/questions/tagged/docusaurus',
@@ -124,22 +124,22 @@ const config: Config = {
                             label: 'X',
                             href: 'https://x.com/docusaurus',
                         },
-                    ], */
-                },
+                    ], 
+                },*/
                 {
                     title: 'More',
                     items: [
                         {
                             label: 'Data Structures',
-                            href: 'https://github.com/carlos-paezf/Data_Structures',
+                            href: 'https://carlos-paezf.github.io/Data_Structures',
                         },
                         {
                             label: 'Object Oriented Programming Intersemester',
-                            href: 'https://github.com/carlos-paezf/Object_Oriented_Programming_Intersemester'
+                            href: 'https://carlos-paezf.github.io/Object_Oriented_Programming_Intersemester'
                         },
                         {
                             label: 'JS and TS In-depth Elective',
-                            href: 'https://github.com/carlos-paezf/JS_and_TS_In-depth_Elective'
+                            href: 'https://carlos-paezf.github.io/JS_and_TS_In-depth_Elective'
                         }
                     ],
                 },

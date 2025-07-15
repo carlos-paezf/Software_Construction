@@ -1,0 +1,8 @@
+{
+    "label": "Validación, accesibilidad y presentación",
+    "position": 10,
+    "link": {
+        "type": "generated-index",
+        "description": "Validación, accesibilidad y presentación son pilares fundamentales para asegurar experiencias digitales funcionales, inclusivas y atractivas. La validación garantiza que los datos ingresados sean coherentes y seguros, aplicándose tanto en frontend como en backend con herramientas como ReactiveForms en Angular o class-validator en NestJS. La accesibilidad (a11y) se enfoca en que las aplicaciones sean utilizables por cualquier persona, incorporando prácticas como uso de etiquetas semánticas, navegación por teclado, contraste visual y compatibilidad con lectores de pantalla. Finalmente, la presentación define la estética y usabilidad visual de la app: desde un diseño responsive hasta componentes coherentes, pasando por tipografías legibles y microinteracciones sutiles. La integración de estos tres aspectos no solo eleva la calidad técnica del proyecto, sino que refuerza su impacto pedagógico y humano."
+    }
+}
