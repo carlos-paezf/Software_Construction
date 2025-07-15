@@ -2,4 +2,4 @@
 sidebar_position: 8
 ---
 
-# Titulo del tema
+# Integración continua con GitHub Actions
