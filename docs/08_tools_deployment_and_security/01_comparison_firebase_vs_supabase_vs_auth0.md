@@ -2,4 +2,4 @@
 sidebar_position: 1
 ---
 
-# Titulo del tema
+# Comparativa: Firebase vs Supabase vs Auth0

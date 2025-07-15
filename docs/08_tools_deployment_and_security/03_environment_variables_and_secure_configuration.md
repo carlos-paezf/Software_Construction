@@ -2,4 +2,4 @@
 sidebar_position: 3
 ---
 
-# Titulo del tema
+# Variables de entorno y configuración segura
