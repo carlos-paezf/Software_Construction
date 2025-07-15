@@ -2,4 +2,4 @@
 sidebar_position: 9
 ---
 
-# Titulo del tema
+# ¿Qué es un wireframe y un mockup?

@@ -2,4 +2,4 @@
 sidebar_position: 8
 ---
 
-# Titulo del tema
+# Diseño centrado en el usuario (DCU)

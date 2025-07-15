@@ -2,4 +2,4 @@
 sidebar_position: 6
 ---
 
-# Titulo del tema
+# Principios de UX/UI

@@ -2,4 +2,4 @@
 sidebar_position: 10
 ---
 
-# Titulo del tema
+# Uso básico de Figma o Penpot para prototipos
