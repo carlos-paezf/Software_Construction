@@ -2,4 +2,4 @@
 sidebar_position: 2
 ---
 
-# Titulo del tema
+# Instalación de entorno Angular (Node, CLI, Vite)

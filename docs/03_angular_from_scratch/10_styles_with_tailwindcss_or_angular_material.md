@@ -2,4 +2,4 @@
 sidebar_position: 10
 ---
 
-# Titulo del tema
+# Estilos con TailwindCSS o Angular Material

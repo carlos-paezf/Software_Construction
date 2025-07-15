@@ -2,4 +2,4 @@
 sidebar_position: 12
 ---
 
-# Titulo del tema
+# Validación de formularios (sincrónica y asincrónica)

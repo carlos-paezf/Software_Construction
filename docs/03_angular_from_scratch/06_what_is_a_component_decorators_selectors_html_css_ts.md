@@ -2,4 +2,4 @@
 sidebar_position: 6
 ---
 
-# Titulo del tema
+# ¿Qué es un componente? (decoradores, selector, HTML, CSS, TS)

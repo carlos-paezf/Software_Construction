@@ -2,4 +2,4 @@
 sidebar_position: 4
 ---
 
-# Titulo del tema
+# TypeScript para Angular: tipos, interfaces, clases
