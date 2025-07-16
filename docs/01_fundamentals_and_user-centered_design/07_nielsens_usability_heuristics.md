@@ -27,7 +27,7 @@ Se usan principalmente en **evaluaciones heurísticas**, donde expertos inspecci
 
 Supongamos una app de gestión de tareas. A continuación se muestra cómo aplicar las heurísticas en una pantalla de creación de tareas.
 
-```html
+```html title="task.component.html" showLineNumbers
 <form [formGroup]="taskForm" (ngSubmit)="createTask()" aria-describedby="taskHint">
   <label for="task">Nueva tarea:</label>
   <input id="task" formControlName="task" placeholder="Escribe tu tarea..." required />

@@ -34,7 +34,7 @@ graph TD
 
 **Versión basada en suposiciones (sin DCU)**:
 
-```html
+```html showLineNumbers
 <input type="text" placeholder="Número de radicado" />
 ```
 
@@ -46,7 +46,7 @@ graph TD
 
 **Versión centrada en el usuario**:
 
-```html
+```html showLineNumbers
 <label for="document">Número de documento</label>
 <input
   id="document"

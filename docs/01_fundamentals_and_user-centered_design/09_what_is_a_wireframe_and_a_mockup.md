@@ -72,7 +72,7 @@ flowchart TB
 
 **Mockup (Figma o CSS en Angular)**:
 
-```css
+```css showLineNumbers
 .login-form {
   background-color: #ffffff;
   border-radius: 12px;
