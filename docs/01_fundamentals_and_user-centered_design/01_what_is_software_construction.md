@@ -184,48 +184,6 @@ flowchart LR
 |**Empresas**|Garantiza coherencia y estabilidad en grandes equipos de desarrollo.|
 |**Sistemas críticos** |Reduce errores humanos, facilita la trazabilidad y la validación.|
 
-## Es momento de que te preguntes
-
-- **Ejercicio 1:** ¿Qué no es construcción de software?
-  
-  *Nivel:* Individual
-
-  *Enunciado:* Redacta una lista de actividades comunes en el desarrollo de software que no hacen parte directa de la construcción, pero que la complementan. Justifica tu clasificación.
-
-  *Objetivo:* Identificar límites y conexiones con otras etapas.
-
-- **Ejercicio 2:** Refactorización orientada a SOLID
-
-  *Nivel:* Grupal (2-3 personas)
-
-  *Enunciado:* Se te entrega una clase UserManager monolítica con múltiples responsabilidades. Ajustala usando principios SOLID, separando entidades, casos de uso y repositorios.
-
-  *Objetivo:* Aplicar Clean Code y Clean Architecture.
-
-- **Ejercicio 3:** Diagrama de capas
-
-  *Nivel:* Individual
-
-  *Enunciado:* Dibuja un diagrama de Clean Architecture para un sistema de gestión de tareas con Angular (frontend) y NestJS (backend).
-
-  *Objetivo:* Comprender separación de capas y responsabilidades.
-
-- **Ejercicio 4:** Análisis de errores frecuentes
-
-  *Nivel:* Grupal (3-4 personas)
-
-  *Enunciado:* Revisa fragmentos de código con errores de construcción (nombres confusos, responsabilidades mezcladas, mal manejo de errores) y propón mejoras.
-
-  *Objetivo:* Identificar malas prácticas y reforzar criterios de calidad.
-
-- **Ejercicio 5:** Construcción dirigida por pruebas
-
-  *Nivel:* Individual
-
-  *Enunciado:* Implementa una función calculateTotalPrice(cart: Product[]) que sume el total, aplicando TDD y respetando los principios SOLID.
-
-  *Objetivo:* Introducir buenas prácticas de diseño y pruebas desde el inicio.
-
 ## Resumen de Buenas Prácticas aplicadas
 
 |Principio|Aplicación en el ejemplo|
