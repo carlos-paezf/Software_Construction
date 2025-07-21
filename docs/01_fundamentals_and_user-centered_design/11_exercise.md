@@ -6,421 +6,214 @@ sidebar_position: 10
 
 ## ¿Qué es Construcción de Software?
 
-- **Ejercicio 1:** ¿Qué no es construcción de software?
+### Reto 1:El manifiesto de los programadores
 
-  *Nivel:* Individual
+*Nivel:* Básico
 
-  *Enunciado:* Redacta una lista de actividades comunes en el desarrollo de software que no hacen parte directa de la construcción, pero que la complementan. Justifica tu clasificación.
+*Tiempo estimado de resolución:* 20 minutos
 
-  *Objetivo:* Identificar límites y conexiones con otras etapas.
+*Enunciado:* Investiga los valores del Manifiesto Ágil. Luego, responde a 4 preguntas breves de reflexión sobre cómo esos valores influyen en la construcción de software de calidad.
 
-- **Ejercicio 2:** Refactorización orientada a SOLID
+*Resultado esperado:*
 
-  *Nivel:* Grupal (2-3 personas)
+Un documento o presentación breve donde expliques:
 
-  *Enunciado:* Se te entrega una clase UserManager monolítica con múltiples responsabilidades. Ajustala usando principios SOLID, separando entidades, casos de uso y repositorios.
+- ¿Qué valor del manifiesto te parece más importante y por qué?
+- ¿Qué prácticas de codificación reflejan esos valores?
+- ¿Cómo afecta la colaboración con el cliente a la calidad del código?
+- ¿Qué entiendes por “software funcionando sobre documentación exhaustiva”?
 
-  *Objetivo:* Aplicar Clean Code y Clean Architecture.
+*Pistas o ayudas:*
 
-- **Ejercicio 3:** Diagrama de capas
-
-  *Nivel:* Individual
-
-  *Enunciado:* Dibuja un diagrama de Clean Architecture para un sistema de gestión de tareas con Angular (frontend) y NestJS (backend).
-
-  *Objetivo:* Comprender separación de capas y responsabilidades.
-
-- **Ejercicio 4:** Análisis de errores frecuentes
-
-  *Nivel:* Grupal (3-4 personas)
-
-  *Enunciado:* Revisa fragmentos de código con errores de construcción (nombres confusos, responsabilidades mezcladas, mal manejo de errores) y propón mejoras.
-
-  *Objetivo:* Identificar malas prácticas y reforzar criterios de calidad.
-
-- **Ejercicio 5:** Construcción dirigida por pruebas
-
-  *Nivel:* Individual
-
-  *Enunciado:* Implementa una función calculateTotalPrice(cart: Product[]) que sume el total, aplicando TDD y respetando los principios SOLID.
-
-  *Objetivo:* Introducir buenas prácticas de diseño y pruebas desde el inicio.
-
-## Introducción al enfoque ágil y al modelo SCRUM
-
-- **Ejercicio 1:** Rol por una semana
-
-  *Nivel:* Individual
-
-  *Actividad:* Asume el rol de Product Owner, crea un Product Backlog con 10 historias de usuario para una app universitaria.
-
-  *Objetivo:* Comprender enfoque de valor y priorización.
-
-- **Ejercicio 2:** Simulación de Sprint
-
-  *Nivel:* Grupal (4 personas)
-
-  *Actividad:* Divide roles SCRUM. Planifica un Sprint de 1 semana. Define objetivos, tareas, revisiones y una retrospectiva.
-
-  *Objetivo:* Vivenciar flujo completo de SCRUM.
-
-- **Ejercicio 3:** Tablero SCRUM visual
-
-  *Nivel:* Grupal
-
-  *Actividad:* Implementa una vista de Kanban con Angular y arrastrar/soltar tareas entre columnas.
-
-  *Objetivo:* Comprender visualización del trabajo en curso.
-
-- **Ejercicio 4:** Diagnóstico de madurez ágil
-
-  *Nivel:* Individual
-
-  *Actividad:* Evalúa con una rúbrica el nivel de madurez SCRUM de un equipo (real o simulado).
-
-  *Objetivo:* Reflexionar sobre prácticas y oportunidades de mejora.
-
-- **Ejercicio 5:** Análisis crítico
-
-  *Nivel:* Grupal
-
-  *Actividad:* Lee un caso de fracaso ágil documentado. Identifica errores y propón cómo SCRUM habría ayudado.
-
-  *Objetivo:* Comprender los límites y condiciones del enfoque ágil.
+- Consulta [agilemanifesto.org](https://agilemanifesto.org/iso/es/) y piensa en tu experiencia al programar solo o en grupo.
 
 ## Roles de un equipo SCRUM
 
-- **Ejercicio 1:** Asignación de roles
+### Reto 1: Manual de Superpoderes SCRUM
 
-  *Nivel:* Grupal (3 estudiantes)
+*Nivel:* Avanzado
 
-  *Actividad:* Formar un equipo SCRUM (PO, SM, DT) para construir una aplicación de lista de compras.
+*Tiempo estimado de resolución:* 45 minutos
 
-  *Resultado esperado:* Rúbrica con roles, tareas y entregables.
+*Participantes:* Grupos de 3 a 4
 
-- **Ejercicio 2:** Simulación de Sprint Planning
+*Enunciado:* Cada equipo debe crear un manual visual (poster, infografía o presentación) en el que defina los “superpoderes” de cada rol SCRUM:
 
-  *Nivel:* Grupal
+- ¿Qué lo hace indispensable?
+- ¿Qué fortalezas debe tener?
+- ¿Qué errores debe evitar?
 
-  *Actividad:* PO crea 5 historias; el equipo estima esfuerzo con Planning Poker y construye el Sprint Backlog.
+*Resultado esperado:*
 
-  *Objetivo:* Vivenciar priorización y estimación colaborativa.
+- Infografía o presentación por equipo
+- Definiciones claras, ejemplos de la vida real, frases inspiradoras
 
-- **Ejercicio 3:** Diagnóstico de desempeño por rol
+*Pistas o ayudas:*
 
-  *Nivel:* Individual
-
-  *Actividad:* Evalúa cómo se desempeñó cada rol SCRUM en un proyecto previo (real o simulado).
-
-  *Producto*: Autoevaluación o estudio de caso.
-
-- **Ejercicio 4:** Debate
-
-  *Nivel:* Grupal
-
-  *Actividad:* Defender por qué su rol es el más crucial para el éxito del proyecto SCRUM.
-
-  *Objetivo:* Desarrollar pensamiento crítico y comprensión profunda.
-
-- **Ejercicio 5:** Mapa de impedimentos
-
-  *Nivel:* Individual
-
-  *Actividad:* Lista de bloqueos frecuentes para un equipo SCRUM. Luego, como Scrum Master, propone soluciones.
-
-  *Resultado esperado:* Mapa de riesgos + plan de mitigación.
-
-## Artefactos: backlog, sprint, entregables
-
-- **Ejercicio 1:** Crear Product Backlog
-
-  *Nivel:* Individual
-
-  *Actividad:* Escribe 8 historias de usuario para una app universitaria (formato clásico).
-
-  *Objetivo:* Aprender a redactar requisitos orientados al usuario.
-
-- **Ejercicio 2:** Planificación de Sprint
-
-  *Nivel:* Grupal
-
-  *Actividad:* Selecciona 4 historias del Backlog, divídelas en tareas técnicas y estima tiempos.
-
-  *Producto:* Sprint Backlog en Trello o Angular app.
-
-- **Ejercicio 3:** Simulación de Incremento
-
-  *Nivel:* Grupal
-
-  *Actividad:* Construye una funcionalidad completa y verificada al final de un Sprint simulado.
-
-  *Objetivo:* Practicar DoD y entregables funcionales.
-
-- **Ejercicio 4:** Refinamiento
-
-  *Nivel:* Individual o en pareja
-
-  *Actividad:* Reescribe 3 historias mal redactadas para cumplir con INVEST (independiente, negociable, etc.).
-
-  *Objetivo:* Mejorar calidad del Backlog.
-
-- **Ejercicio 5:** Histograma de tareas
-
-  *Nivel:* Grupal
-
-  *Actividad:* Construye un histograma que compare esfuerzo estimado vs. real por historia.
-
-  *Producto:* Análisis visual del Sprint Backlog.
-
-## Ciclo de vida de un proyecto ágil
-
-- **Ejercicio 1:** Mapeo del ciclo ágil
-
-  *Nivel:* Individual
-
-  *Actividad:* Representa el ciclo de vida ágil con tus propias palabras y ejemplos de un proyecto real o ficticio.
-
-  *Producto:* Infografía o presentación.
-
-- **Ejercicio 2:** Simulación completa
-
-  *Nivel:* Grupal
-
-  *Actividad:* En 2 semanas, desarrolla una app mínima aplicando todas las fases del ciclo ágil.
-
-  *Producto:* Repositorio, tablero y retrospectiva escrita.
-
-- **Ejercicio 3:** Contraste con modelo en cascada
-
-  *Nivel:* Individual
-
-  *Actividad:* Realiza una tabla comparativa entre ciclo ágil y tradicional.
-
-  *Objetivo:* Reconocer ventajas del enfoque ágil.
-
-- **Ejercicio 4:** Caso real de iteración
-
-  *Nivel:* Grupal
-
-  *Actividad:* Investiga un proyecto que haya fracasado por no iterar a tiempo.
-
-  *Producto:* Informe breve con lecciones aprendidas.
-
-- **Ejercicio 5:** Diario del desarrollador
-
-  *Nivel:* Individual
-
-  *Actividad:* Escribe durante una semana un “log” diario de trabajo siguiendo el esquema de un Daily Scrum.
-
-  *Objetivo:* Fomentar autorreflexión y autogestión.
+- Usa analogías con videojuegos, cómics o películas para explicar los poderes del equipo SCRUM. Hazlo memorable y creativo.
 
 ## Principios de UX/UI
 
-- **Ejercicio 1:** Evaluación heurística
+### Reto 1: El diseño que frustra
 
-  *Nivel:* Individual
+*Nivel:* Básico
 
-  *Actividad:* Analiza una app conocida aplicando 5 heurísticas de Nielsen (consistencia, visibilidad, prevención de errores, etc.).
+*Tiempo estimado de resolución:* 25 minutos
 
-  *Producto:* Informe de usabilidad.
+*Participantes:* Individual
 
-- **Ejercicio 2:** Rediseño de UI
+*Enunciado:* Escoge una aplicación o sitio web que uses frecuentemente y que tenga problemas claros de usabilidad (botones confusos, navegación compleja, textos poco legibles, etc.). Analiza qué principios de UX/UI están siendo ignorados.
 
-  *Nivel:* Grupal
+*Resultado esperado:*
 
-  *Actividad:* Toma una app mal diseñada y propón una nueva interfaz siguiendo principios UI.
+- Lista de mínimo 3 errores de UX/UI
+- Principio vulnerado (ej. consistencia, jerarquía visual, feedback, etc.)
+- Captura o boceto del error con anotaciones
 
-  *Producto:* Mockup en Figma o plantilla Angular.
+*Pistas o ayudas:*
 
-- **Ejercicio 3:** Accesibilidad
+- Piensa en los principios de usabilidad de Nielsen, los patrones de diseño y en lo que te frustra como usuario. Pregúntate: ¿cómo lo haría más claro o intuitivo?
 
-  *Nivel:* Individual
+### Reto 2: Diseña con el corazón del usuario
 
-  *Actividad:* Agrega etiquetas ARIA, navegación con teclado y colores accesibles a una app.
+*Nivel:* Medio
 
-  *Producto:* Pull request con mejoras UI/UX accesibles.
+*Tiempo estimado de resolución:* 40 minutos
 
-- **Ejercicio 4:** Test de usabilidad
+*Participantes:* En parejas
 
-  *Nivel:* Grupal
+*Enunciado:* Diseñen una interfaz simple (puede ser bocetada a mano o en Figma) para una app de salud mental para jóvenes. Deben aplicar al menos 5 principios de UX/UI:
 
-  *Actividad:* Realiza pruebas de usabilidad con al menos 2 usuarios y registra tiempos, errores, frustraciones.
+- Consistencia
+- Visibilidad del estado del sistema
+- Accesibilidad
+- Jerarquía visual
+- Control del usuario
 
-  *Producto:* Matriz de resultados + propuestas de mejora.
+*Resultado esperado:*
 
-- **Ejercicio 5:** Mapa de flujo UX
+- Prototipo navegable o maqueta de baja fidelidad
+- Documento breve explicando cómo aplicaron cada principio
 
-  *Nivel:* Individual o pareja
+*Pistas o ayudas:*
 
-  *Actividad:* Diseña un flujo de navegación para un usuario nuevo (signup → onboarding → dashboard).
+- Piensen en el usuario final: ¿qué necesita?, ¿qué emociones atraviesa?, ¿qué le da seguridad o claridad?
 
-  *Producto:* Diagrama de flujo + interfaz inicial.
+### Reto 3: Interfaz exprés para abuelos
+
+*Nivel:* Avanzado
+
+*Tiempo estimado de resolución:* 45 minutos
+
+*Participantes:* Grupo de 4
+
+*Enunciado:* Diseña una interfaz (boceto, mockup o prototipo) para una app de videollamadas dirigida a personas mayores de 70 años sin experiencia tecnológica. Tu diseño debe enfocarse en:
+
+- Tamaño de texto
+- Contraste
+- Navegación clara
+- Accesibilidad
+
+*Resultado esperado:*
+
+- Prototipo de al menos 3 pantallas
+- Justificación detallada de las decisiones tomadas
+
+*Pistas o ayudas:*
+
+- Usa herramientas como Figma, Penpot o plantillas en papel. Recuerda el principio de diseño inclusivo: diseña para todos, no solo para ti.
 
 ## Heurísticas de usabilidad de Nielsen
 
-- **Ejercicio 1:** Evaluación heurística individual
+### Reto 1: Caza de errores heurísticos
 
-  *Nivel:* Individual
+*Nivel:* Medio
 
-  *Actividad:* Analiza una app real o simulada y detecta al menos una violación por heurística.
+*Tiempo estimado de resolución:* 30 minutos
 
-  *Producto:* Matriz de hallazgos y recomendaciones.
+*Participantes:* En parejas
 
-- **Ejercicio 2:** Aplicación práctica con Angular
+*Enunciado:* Naveguen durante 10 minutos por un sitio web real (puede ser gubernamental, educativo o antiguo) y detecten al menos 5 violaciones a las heurísticas de Nielsen.
 
-  *Nivel:* Grupal
+*Resultado esperado:*
 
-  *Actividad:* Implementa un formulario aplicando al menos 5 heurísticas de Nielsen.
+- Informe con capturas de pantalla
+- Heurística vulnerada
+- Explicación del problema
+- Propuesta de mejora
 
-  *Producto:* Demo en Angular + listado de heurísticas aplicadas.
+*Pistas o ayudas:*
 
-- **Ejercicio 3:** Rediseño guiado por heurísticas
-
-  *Nivel:* Grupal
-
-  *Actividad:* Tomar una interfaz mal diseñada y rediseñarla usando las heurísticas como criterios de calidad.
-
-  *Producto:* Antes y después + justificación.
-
-- **Ejercicio 4:** Juego de clasificación
-
-  *Nivel:* Individual o en pareja
-
-  *Actividad:* Se presentan ejemplos de interfaces y los estudiantes deben asignar qué heurística se cumple o viola.
-
-  *Producto:* Cuadro clasificatorio + discusión.
-
-- **Ejercicio 5:** Testing heurístico con usuarios
-
-  *Nivel:* Grupal
-
-  *Actividad:* Observar a un usuario interactuar con una app y mapear en tiempo real qué heurísticas están involucradas.
-
-  *Producto:* Mapa de heurísticas en uso.
+- No se enfoquen solo en estética. Evalúen mensajes de error, navegación, visibilidad del estado del sistema y consistencia.
 
 ## Diseño centrado en el usuario (DCU)
 
-- **Ejercicio 1:** Entrevista de usuarios
+### Reto 1: Viaje del usuario… sin perder el rumbo
 
-  *Nivel:* Individual
+*Nivel:* Medio
 
-  *Actividad:* Entrevista a 2 usuarios de una app que usarás como proyecto. Documenta contexto, objetivos, frustraciones.
+*Tiempo estimado de resolución:* 40 minutos
 
-  *Producto:* Mapa de empatía o informe breve.
+*Participantes:* En parejas
 
-- **Ejercicio 2:** Diseño de personas
+*Enunciado:* Diseñen un **Customer Journey Map** (mapa de experiencia) para un usuario que quiere agendar una cita médica por internet. Deben identificar:
 
-  *Nivel:* Parejas
+- Etapas del proceso (buscar, registrarse, elegir cita, confirmar)
+- Acciones del usuario
+- Emociones y puntos de dolor
+- Ideas de mejora en cada etapa
 
-  *Actividad:* Crea al menos 2 "personas" (perfiles ficticios pero realistas de usuarios) para guiar decisiones de diseño.
+*Resultado esperado:*
 
-  *Producto:* Ficha de usuario.
+- Mapa visual o tabla estructurada
+- Propuesta de cambios centrados en el usuario
 
-- **Ejercicio 3:** Flujo centrado en el usuario
+*Pistas o ayudas:*
 
-  *Nivel:* Grupal
+- Pónganse en los zapatos del usuario. ¿Qué frustra más en esos procesos? ¿Dónde se pierde la confianza?
 
-  *Actividad:* Diseña el flujo para completar una tarea (por ejemplo, registrar un pago) con base en entrevistas reales.
+### Reto 2: Diseño rápido con empatía
 
-  *Producto:* Diagrama de flujo + prototipo.
+*Nivel:* Medio
 
-- **Ejercicio 4:** Evaluación iterativa
+*Tiempo estimado de resolución:* 45 minutos
 
-  *Nivel:* Grupal
+*Participantes:* Grupo de 3
 
-  *Actividad:* Lanza un prototipo y aplica pruebas de usuario. Evalúa y rediseña.
+*Enunciado:* Simulen el proceso de DCU para diseñar una aplicación para estudiantes con discapacidad visual leve que permita consultar su horario. Sigan estos pasos:
 
-  *Producto:* Informe de hallazgos + mejoras aplicadas.
+- Investigación breve (desk research)
+- Definición del usuario y necesidades
+- Ideación (lluvia de ideas)
+- Boceto o wireframe de la solución
 
-- **Ejercicio 5:** Filtro heurístico de interfaz
+*Resultado esperado:*
 
-  *Nivel:* Individual
+- Documento con el proceso seguido
+- Boceto funcional con comentarios explicativos
 
-  *Actividad:* Evalúa una interfaz con preguntas orientadas a necesidades del usuario: ¿Qué busca? ¿Qué le frustra? ¿Dónde se detiene?
+*Pistas o ayudas:*
 
-  *Producto:* Diagnóstico de experiencia.
+- Asegúrense de que los textos sean grandes, el contraste alto y la navegación simple. Consideren el uso de lectores de pantalla.
 
 ## ¿Qué es un wireframe y un mockup?
 
-- **Ejercicio 1:** Dibujar wireframe
+### Reto 1: De la estructura a la estética
 
-  *Nivel:* Individual
+*Nivel:* Medio
 
-  *Actividad:* Realiza un wireframe en papel o Figma para una pantalla de perfil de usuario.
+*Tiempo estimado de resolución:* 40 minutos
 
-  *Producto:* Imagen del wireframe con anotaciones.
+*Participantes:* En parejas
 
-- **Ejercicio 2:** Crear mockup visual
+*Enunciado:* Diseña un wireframe para una aplicación de reservas de transporte escolar. Luego, crea un mockup del mismo diseño aplicando estilos (tipografías, colores, íconos, imágenes).
 
-  *Nivel:* Pareja
+*Resultado esperado:*
 
-  *Actividad:* Toma el wireframe anterior y crea un mockup con estilos visuales definidos.
+- Wireframe de baja fidelidad
+- Mockup de alta fidelidad
+- Documento corto comparando ambos (objetivo, nivel de detalle, herramientas usadas)
 
-  *Producto:* Mockup en Figma, Adobe XD o CSS Angular.
+*Pistas o ayudas:*
 
-- **Ejercicio 3:** Comparación crítica
-
-  *Nivel:* Grupal
-
-  *Actividad:* Analiza dos pantallas (una en wireframe y otra en mockup) y discute fortalezas y debilidades de cada formato.
-
-  *Producto:* Cuadro comparativo + presentación.
-
-- **Ejercicio 4:** Validación con usuarios
-
-  *Nivel:* Grupal
-
-  *Actividad:* Muestra wireframe y mockup a 3 usuarios y documenta sus reacciones.
-
-  *Producto:* Informe de feedback.
-
-- **Ejercicio 5:** Prototipo completo
-
-  *Nivel:* Grupal
-
-  *Actividad:* Diseña wireframes y mockups para una app de tutorías.
-
-  *Producto:* Carpeta organizada con iteraciones.
-
-## Uso básico de Figma o Penpot para prototipos
-
-- **Ejercicio 1:** Prototipo de flujo de login
-
-  *Nivel:* Individual
-
-  *Actividad:* Diseña 2 pantallas (login y dashboard) y conecta un botón para navegar entre ellas.
-  Herramienta: Figma o Penpot
-
-  *Producto:* Prototipo navegable + link de visualización.
-
-- **Ejercicio 2:** Flujos alternativos
-
-  *Nivel:* Parejas
-
-  *Actividad:* Crea un prototipo con dos rutas de navegación posibles: éxito y error (por ejemplo, ingreso válido vs. incorrecto).
-
-  *Objetivo:* Modelar decisiones del usuario.
-
-- **Ejercicio 3:** Prueba con usuarios
-
-  *Nivel:* Grupal
-
-  *Actividad:* Comparte tu prototipo con al menos 2 personas, observa cómo interactúan e identifica mejoras.
-
-  *Producto:* Informe de usabilidad + iteración rediseñada.
-
-- **Ejercicio 4:** Integración con proyecto Angular
-
-  *Nivel:* Grupal
-
-  *Actividad:* Diseña los mockups de tu app final, exporta assets y guías visuales, y compáralos con la implementación en Angular.
-
-  *Producto:* Figma → HTML/CSS en Angular (comparativo).
-
-- **Ejercicio 5:** Rediseño colaborativo
-
-  *Nivel:* Grupal (3–4 personas)
-
-  *Actividad:* En Figma o Penpot, usen colaboración en tiempo real para rediseñar una pantalla con base en heurísticas de Nielsen.
-
-  *Producto:* Versión final + historia de cambios.
+- Puedes usar herramientas como Figma, Penpot, Balsamiq o lápiz y papel. El wireframe se enfoca en estructura y jerarquía; el mockup en apariencia.
