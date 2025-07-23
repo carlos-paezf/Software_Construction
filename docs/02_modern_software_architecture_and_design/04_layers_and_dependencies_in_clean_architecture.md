@@ -80,5 +80,6 @@ En
 - Martin, R. C. (2018). Clean Architecture: A Craftsman's Guide to Software Structure and Design. Prentice Hall.
 - Brown, S. (2019). Software Architecture for Developers (2nd ed.). Leanpub.
 - Fowler, M. (2004). Patterns of Enterprise Application Architecture. Addison-Wesley.
+- Diego Coder. (2023). [Introducción a las “Clean Architectures”](https://medium.com/@diego.coder/introducci%C3%B3n-a-las-clean-architectures-723fe9fe17fa). Medium.
 - [Angular Docs - Architecture Overview.](https://angular.io/guide/architecture)
 - [NestJS Core Team. (2024). NestJS Docs.](https://docs.nestjs.com)
