@@ -581,21 +581,24 @@ export const appConfig: ApplicationConfig = {
 </TabItem>
 </Tabs>
 
-```mermaid
-flowchart TD
-    UI[StudentPageComponent]
-    UC1[CreateStudentUseCase]
-    UC2[ListStudentsUseCase]
-    REPOPORT[StudentRepository - abstract]
-    ADAPTER[StudentHttpService]
-    API[HTTP API NestJS]
+## Diagrama de secuencias
 
-    UI --> UC1
-    UI --> UC2
-    UC1 --> REPOPORT
-    UC2 --> REPOPORT
-    ADAPTER --> REPOPORT
-    ADAPTER --> API
+```mermaid
+sequenceDiagram
+    participant UI as Usuario / UI (Componente)
+    participant Controller as Controlador (HTTP o Component)
+    participant UseCase as Caso de Uso (Application Layer)
+    participant RepoPort as StudentRepository (Dominio)
+    participant RepoImpl as StudentHttpService / DBAdapter (Infraestructura)
+
+    UI->>Controller: Envía datos del formulario
+    Controller->>UseCase: Ejecuta caso de uso
+    UseCase->>RepoPort: Solicita guardar estudiante
+    RepoPort->>RepoImpl: Llama implementación concreta
+    RepoImpl-->>RepoPort: Retorna resultado
+    RepoPort-->>UseCase: Retorna entidad
+    UseCase-->>Controller: Devuelve respuesta
+    Controller-->>UI: Muestra confirmación
 ```
 
 ## Buenas prácticas
