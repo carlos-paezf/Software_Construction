@@ -35,6 +35,7 @@ Brindar tanto a estudiantes cómo docentes, un recurso descentralizado, estructu
   - TypeScript para Angular: tipos, interfaces, clases
   - Comando útiles de Angular CLI
   - ¿Qué es un componente? (decoradores, selector, HTML, CSS, TS)
+  - Signals
   - Comunicación entre componentes: `@Input` y `@Output`
   - Servicios en Angular e Inyección de Dependencias
   - Routing en Angular (básico y avanzado)
