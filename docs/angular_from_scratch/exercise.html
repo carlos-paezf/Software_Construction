@@ -1,0 +1,376 @@
+<!doctype html>
+<html lang="es" dir="ltr" class="docs-wrapper plugin-docs plugin-id-default docs-version-current docs-doc-page docs-doc-id-angular_from_scratch/exercise" data-has-hydrated="false">
+<head>
+<meta charset="UTF-8">
+<meta name="generator" content="Docusaurus v3.8.1">
+<title data-rh="true">Ejercicios propuestos por tema | Construcción de Software</title><meta data-rh="true" name="viewport" content="width=device-width,initial-scale=1"><meta data-rh="true" property="og:image" content="https://carlos-paezf.github.io/Software_Construction/img/docusaurus-social-card.jpg"><meta data-rh="true" name="twitter:image" content="https://carlos-paezf.github.io/Software_Construction/img/docusaurus-social-card.jpg"><meta data-rh="true" property="og:url" content="https://carlos-paezf.github.io/Software_Construction/docs/angular_from_scratch/exercise"><meta data-rh="true" property="og:locale" content="es"><meta data-rh="true" property="og:locale:alternate" content="en"><meta data-rh="true" name="docusaurus_locale" content="es"><meta data-rh="true" name="docsearch:language" content="es"><meta data-rh="true" name="keywords" content="software construction, academic, explanation, university, algorithms, computer science, javascript, typescript, documentation"><meta data-rh="true" name="twitter:card" content="summary_large_image"><meta data-rh="true" name="docusaurus_version" content="current"><meta data-rh="true" name="docusaurus_tag" content="docs-default-current"><meta data-rh="true" name="docsearch:version" content="current"><meta data-rh="true" name="docsearch:docusaurus_tag" content="docs-default-current"><meta data-rh="true" property="og:title" content="Ejercicios propuestos por tema | Construcción de Software"><meta data-rh="true" name="description" content="TypeScript para Angular: tipos, interfaces, clases"><meta data-rh="true" property="og:description" content="TypeScript para Angular: tipos, interfaces, clases"><link data-rh="true" rel="icon" href="/Software_Construction/img/favicon.ico"><link data-rh="true" rel="canonical" href="https://carlos-paezf.github.io/Software_Construction/docs/angular_from_scratch/exercise"><link data-rh="true" rel="alternate" href="https://carlos-paezf.github.io/Software_Construction/docs/angular_from_scratch/exercise" hreflang="es"><link data-rh="true" rel="alternate" href="https://carlos-paezf.github.io/Software_Construction/en/docs/angular_from_scratch/exercise" hreflang="en"><link data-rh="true" rel="alternate" href="https://carlos-paezf.github.io/Software_Construction/docs/angular_from_scratch/exercise" hreflang="x-default"><script data-rh="true" type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"Angular desde 0","item":"https://carlos-paezf.github.io/Software_Construction/docs/category/angular-desde-0"},{"@type":"ListItem","position":2,"name":"Ejercicios propuestos por tema","item":"https://carlos-paezf.github.io/Software_Construction/docs/angular_from_scratch/exercise"}]}</script><link rel="stylesheet" href="/Software_Construction/assets/css/styles.111113dd.css">
+<script src="/Software_Construction/assets/js/runtime~main.cd797e9a.js" defer="defer"></script>
+<script src="/Software_Construction/assets/js/main.b4006fd7.js" defer="defer"></script>
+</head>
+<body class="navigation-with-keyboard">
+<svg xmlns="http://www.w3.org/2000/svg" style="display: none;"><defs>
+<symbol id="theme-svg-external-link" viewBox="0 0 24 24"><path fill="currentColor" d="M21 13v10h-21v-19h12v2h-10v15h17v-8h2zm3-12h-10.988l4.035 4-6.977 7.07 2.828 2.828 6.977-7.07 4.125 4.172v-11z"/></symbol>
+</defs></svg>
+<script>!function(){var t="light";var e=function(){try{return new URLSearchParams(window.location.search).get("docusaurus-theme")}catch(t){}}()||function(){try{return window.localStorage.getItem("theme")}catch(t){}}();document.documentElement.setAttribute("data-theme",e||t),document.documentElement.setAttribute("data-theme-choice",e||t)}(),function(){try{const c=new URLSearchParams(window.location.search).entries();for(var[t,e]of c)if(t.startsWith("docusaurus-data-")){var a=t.replace("docusaurus-data-","data-");document.documentElement.setAttribute(a,e)}}catch(t){}}()</script><div id="__docusaurus"><link rel="preload" as="image" href="/Software_Construction/img/logo.svg"><div role="region" aria-label="Saltar al contenido principal"><a class="skipToContent_fXgn" href="#__docusaurus_skipToContent_fallback">Saltar al contenido principal</a></div><nav aria-label="Principal" class="theme-layout-navbar navbar navbar--fixed-top"><div class="navbar__inner"><div class="theme-layout-navbar-left navbar__items"><button aria-label="Alternar barra lateral" aria-expanded="false" class="navbar__toggle clean-btn" type="button"><svg width="30" height="30" viewBox="0 0 30 30" aria-hidden="true"><path stroke="currentColor" stroke-linecap="round" stroke-miterlimit="10" stroke-width="2" d="M4 7h22M4 15h22M4 23h22"></path></svg></button><a class="navbar__brand" href="/Software_Construction/"><div class="navbar__logo"><img src="/Software_Construction/img/logo.svg" alt="Software Construction Logo" class="themedComponent_mlkZ themedComponent--light_NVdE"><img src="/Software_Construction/img/logo.svg" alt="Software Construction Logo" class="themedComponent_mlkZ themedComponent--dark_xIcU"></div><b class="navbar__title text--truncate">Construcción de Software</b></a><a aria-current="page" class="navbar__item navbar__link navbar__link--active" href="/Software_Construction/docs/intro">Conoce la Teoría</a></div><div class="theme-layout-navbar-right navbar__items navbar__items--right"><a href="https://github.com/carlos-paezf/Software_Construction" target="_blank" rel="noopener noreferrer" class="navbar__item navbar__link">GitHub<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a><div class="toggle_vylO colorModeToggle_DEke"><button class="clean-btn toggleButton_gllP toggleButtonDisabled_aARS" type="button" disabled="" title="system mode" aria-label="Cambiar entre modo oscuro y claro (actualmente system mode)"><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP lightToggleIcon_pyhR"><path fill="currentColor" d="M12,9c1.65,0,3,1.35,3,3s-1.35,3-3,3s-3-1.35-3-3S10.35,9,12,9 M12,7c-2.76,0-5,2.24-5,5s2.24,5,5,5s5-2.24,5-5 S14.76,7,12,7L12,7z M2,13l2,0c0.55,0,1-0.45,1-1s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S1.45,13,2,13z M20,13l2,0c0.55,0,1-0.45,1-1 s-0.45-1-1-1l-2,0c-0.55,0-1,0.45-1,1S19.45,13,20,13z M11,2v2c0,0.55,0.45,1,1,1s1-0.45,1-1V2c0-0.55-0.45-1-1-1S11,1.45,11,2z M11,20v2c0,0.55,0.45,1,1,1s1-0.45,1-1v-2c0-0.55-0.45-1-1-1C11.45,19,11,19.45,11,20z M5.99,4.58c-0.39-0.39-1.03-0.39-1.41,0 c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0s0.39-1.03,0-1.41L5.99,4.58z M18.36,16.95 c-0.39-0.39-1.03-0.39-1.41,0c-0.39,0.39-0.39,1.03,0,1.41l1.06,1.06c0.39,0.39,1.03,0.39,1.41,0c0.39-0.39,0.39-1.03,0-1.41 L18.36,16.95z M19.42,5.99c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06c-0.39,0.39-0.39,1.03,0,1.41 s1.03,0.39,1.41,0L19.42,5.99z M7.05,18.36c0.39-0.39,0.39-1.03,0-1.41c-0.39-0.39-1.03-0.39-1.41,0l-1.06,1.06 c-0.39,0.39-0.39,1.03,0,1.41s1.03,0.39,1.41,0L7.05,18.36z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP darkToggleIcon_wfgR"><path fill="currentColor" d="M9.37,5.51C9.19,6.15,9.1,6.82,9.1,7.5c0,4.08,3.32,7.4,7.4,7.4c0.68,0,1.35-0.09,1.99-0.27C17.45,17.19,14.93,19,12,19 c-3.86,0-7-3.14-7-7C5,9.07,6.81,6.55,9.37,5.51z M12,3c-4.97,0-9,4.03-9,9s4.03,9,9,9s9-4.03,9-9c0-0.46-0.04-0.92-0.1-1.36 c-0.98,1.37-2.58,2.26-4.4,2.26c-2.98,0-5.4-2.42-5.4-5.4c0-1.81,0.89-3.42,2.26-4.4C12.92,3.04,12.46,3,12,3L12,3z"></path></svg><svg viewBox="0 0 24 24" width="24" height="24" aria-hidden="true" class="toggleIcon_g3eP systemToggleIcon_QzmC"><path fill="currentColor" d="m12 21c4.971 0 9-4.029 9-9s-4.029-9-9-9-9 4.029-9 9 4.029 9 9 9zm4.95-13.95c1.313 1.313 2.05 3.093 2.05 4.95s-0.738 3.637-2.05 4.95c-1.313 1.313-3.093 2.05-4.95 2.05v-14c1.857 0 3.637 0.737 4.95 2.05z"></path></svg></button></div><div class="navbarSearchContainer_Bca1"></div></div></div><div role="presentation" class="navbar-sidebar__backdrop"></div></nav><div id="__docusaurus_skipToContent_fallback" class="theme-layout-main main-wrapper mainWrapper_z2l0"><div class="docsWrapper_hBAB"><button aria-label="Volver al principio" class="clean-btn theme-back-to-top-button backToTopButton_sjWU" type="button"></button><div class="docRoot_UBD9"><aside class="theme-doc-sidebar-container docSidebarContainer_YfHR"><div class="sidebarViewport_aRkj"><div class="sidebar_njMd"><nav aria-label="Barra lateral de Documentos" class="menu thin-scrollbar menu_SIkG"><ul class="theme-doc-sidebar-menu menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-1 menu__list-item"><a class="menu__link" href="/Software_Construction/docs/intro">Bienvenida</a></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Software_Construction/docs/category/fundamentos-y-diseño-centrado-en-el-usuario">Fundamentos y Diseño Centrado en el Usuario</a><button aria-label="Ampliar la categoría &#x27;Fundamentos y Diseño Centrado en el Usuario&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Software_Construction/docs/category/arquitectura-y-diseño-de-software-moderno">Arquitectura y diseño de software moderno</a><button aria-label="Ampliar la categoría &#x27;Arquitectura y diseño de software moderno&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist menu__link--active" href="/Software_Construction/docs/category/angular-desde-0">Angular desde 0</a><button aria-label="Colapsar categoría &#x27;Angular desde 0&#x27; de la barra lateral" aria-expanded="true" type="button" class="clean-btn menu__caret"></button></div><ul class="menu__list"><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Software_Construction/docs/angular_from_scratch/what_is_angular_and_why_use_it">¿Qué es Angular y por qué usarlo?</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Software_Construction/docs/angular_from_scratch/angular_environment_installation_node_cli_vite">Instalación de entorno Angular (Node, CLI, Vite)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Software_Construction/docs/angular_from_scratch/structure_of_an_angular_project">Estructura de un proyecto Angular</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Software_Construction/docs/angular_from_scratch/typescript_for_angular_types_interfaces_classes">TypeScript para Angular: tipos, interfaces, clases</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Software_Construction/docs/angular_from_scratch/useful_angular_cli_commands">Comando útiles de Angular CLI</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Software_Construction/docs/angular_from_scratch/what_is_a_component_decorators_selectors_html_css_ts">¿Qué es un componente? (decoradores, selector, HTML, CSS, TS)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Software_Construction/docs/angular_from_scratch/signals">Signals</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Software_Construction/docs/angular_from_scratch/communication_between_components_input_and_output">Comunicación entre componentes: @Input y @Output</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Software_Construction/docs/angular_from_scratch/services_in_angular_and_dependency_injection">Servicios en Angular e Inyección de Dependencias</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Software_Construction/docs/angular_from_scratch/routing_in_angular_basic_and_advanced">Routing en Angular (básico y avanzado)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Software_Construction/docs/angular_from_scratch/styles_with_tailwindcss_or_angular_material">Estilos con TailwindCSS o Angular Material</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Software_Construction/docs/angular_from_scratch/reactive_vs_template-driven_forms">Formularios reactivos vs. template-driven</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Software_Construction/docs/angular_from_scratch/form_validation_synchronous_and_asynchronous">Validación de formularios (sincrónica y asincrónica)</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link" tabindex="0" href="/Software_Construction/docs/angular_from_scratch/state_management_in_forms">Manejo de estados en formularios</a></li><li class="theme-doc-sidebar-item-link theme-doc-sidebar-item-link-level-2 menu__list-item"><a class="menu__link menu__link--active" aria-current="page" tabindex="0" href="/Software_Construction/docs/angular_from_scratch/exercise">Ejercicios propuestos por tema</a></li></ul></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Software_Construction/docs/category/nestjs-y-backend-moderno">NestJS y Backend moderno</a><button aria-label="Ampliar la categoría &#x27;NestJS y Backend moderno&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Software_Construction/docs/category/integración-fullstack">Integración Fullstack</a><button aria-label="Ampliar la categoría &#x27;Integración Fullstack&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Software_Construction/docs/category/testing-y-calidad">Testing y Calidad</a><button aria-label="Ampliar la categoría &#x27;Testing y Calidad&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Software_Construction/docs/category/metodologías-y-gestión-ágil">Metodologías y gestión ágil</a><button aria-label="Ampliar la categoría &#x27;Metodologías y gestión ágil&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Software_Construction/docs/category/tools-deployment-and-security">Tools, deployment, and security</a><button aria-label="Ampliar la categoría &#x27;Tools, deployment, and security&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Software_Construction/docs/category/validación-accesibilidad-y-presentación">Validación, accesibilidad y presentación</a><button aria-label="Ampliar la categoría &#x27;Validación, accesibilidad y presentación&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li><li class="theme-doc-sidebar-item-category theme-doc-sidebar-item-category-level-1 menu__list-item menu__list-item--collapsed"><div class="menu__list-item-collapsible"><a class="menu__link menu__link--sublist" href="/Software_Construction/docs/category/extras">Extras</a><button aria-label="Ampliar la categoría &#x27;Extras&#x27; de la barra lateral" aria-expanded="false" type="button" class="clean-btn menu__caret"></button></div></li></ul></nav></div></div></aside><main class="docMainContainer_TBSr"><div class="container padding-top--md padding-bottom--lg"><div class="row"><div class="col docItemCol_VOVn"><div class="docItemContainer_Djhp"><article><nav class="theme-doc-breadcrumbs breadcrumbsContainer_Z_bl" aria-label="Rastro de navegación"><ul class="breadcrumbs"><li class="breadcrumbs__item"><a aria-label="Página de Inicio" class="breadcrumbs__link" href="/Software_Construction/"><svg viewBox="0 0 24 24" class="breadcrumbHomeIcon_YNFT"><path d="M10 19v-5h4v5c0 .55.45 1 1 1h3c.55 0 1-.45 1-1v-7h1.7c.46 0 .68-.57.33-.87L12.67 3.6c-.38-.34-.96-.34-1.34 0l-8.36 7.53c-.34.3-.13.87.33.87H5v7c0 .55.45 1 1 1h3c.55 0 1-.45 1-1z" fill="currentColor"></path></svg></a></li><li class="breadcrumbs__item"><a class="breadcrumbs__link" href="/Software_Construction/docs/category/angular-desde-0"><span>Angular desde 0</span></a></li><li class="breadcrumbs__item breadcrumbs__item--active"><span class="breadcrumbs__link">Ejercicios propuestos por tema</span></li></ul></nav><div class="tocCollapsible_ETCw theme-doc-toc-mobile tocMobile_ITEo"><button type="button" class="clean-btn tocCollapsibleButton_TO0P">En esta página</button></div><div class="theme-doc-markdown markdown"><header><h1>Ejercicios propuestos por tema</h1></header>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="typescript-para-angular-tipos-interfaces-clases">TypeScript para Angular: tipos, interfaces, clases<a href="#typescript-para-angular-tipos-interfaces-clases" class="hash-link" aria-label="Enlace directo al TypeScript para Angular: tipos, interfaces, clases" title="Enlace directo al TypeScript para Angular: tipos, interfaces, clases">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reto-1-clases-en-acción-angular-friendly">Reto 1: Clases en acción (Angular-friendly)<a href="#reto-1-clases-en-acción-angular-friendly" class="hash-link" aria-label="Enlace directo al Reto 1: Clases en acción (Angular-friendly)" title="Enlace directo al Reto 1: Clases en acción (Angular-friendly)">​</a></h3>
+<p><em>Nivel:</em> Medio</p>
+<p><em>Tiempo estimado de resolución:</em> 40 minutos</p>
+<p><em>Participantes:</em> Grupo de 3</p>
+<p><em>Enunciado:</em> Crea una clase <code>Product</code> con propiedades como <code>id</code>, <code>name</code>, <code>price</code> y un método <code>applyDiscount(percentage: number): number</code>. Luego, instánciala en un archivo y úsala para calcular precios.</p>
+<p><em>Resultado esperado:</em> Código de clase funcional y prueba en consola mostrando descuentos aplicados.</p>
+<p><em>Pistas o ayudas:</em></p>
+<ul>
+<li>Las clases en TypeScript permiten constructores, propiedades privadas y métodos públicos. Usa modificadores de acceso (<code>public</code>, <code>private</code>, <code>readonly</code>).</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="signals">Signals<a href="#signals" class="hash-link" aria-label="Enlace directo al Signals" title="Enlace directo al Signals">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reto-1-tu-primer-signal">Reto 1: Tu primer signal<a href="#reto-1-tu-primer-signal" class="hash-link" aria-label="Enlace directo al Reto 1: Tu primer signal" title="Enlace directo al Reto 1: Tu primer signal">​</a></h3>
+<p><em>Nivel:</em> Básico</p>
+<p><em>Tiempo estimado de resolución:</em> 25 minutos</p>
+<p><em>Participantes:</em> Individual</p>
+<p><em>Enunciado:</em> Crea un componente Angular con un signal que almacene un contador. Debe:</p>
+<ul>
+<li>Mostrar el valor actual</li>
+<li>Incrementar y decrementar el contador con dos botones</li>
+</ul>
+<p><em>Resultado esperado:</em></p>
+<ul>
+<li>Uso de <code>signal&lt;number&gt;(0)</code></li>
+<li>Métodos <code>set</code>, <code>update</code> o equivalentes</li>
+<li>Template funcional</li>
+</ul>
+<p><em>Pistas o ayudas:</em></p>
+<ul>
+<li>Recuerda importar signal desde <code>@angular/core</code> y actualizar el valor con <code>counter.update(v =&gt; v + 1)</code>.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reto-2-signals--computed">Reto 2: Signals + computed<a href="#reto-2-signals--computed" class="hash-link" aria-label="Enlace directo al Reto 2: Signals + computed" title="Enlace directo al Reto 2: Signals + computed">​</a></h3>
+<p><em>Nivel:</em> Básico</p>
+<p><em>Tiempo estimado de resolución:</em> 30 minutos</p>
+<p><em>Participantes:</em> En parejas</p>
+<p><em>Enunciado:</em> Crea un componente que tenga dos signals: price y quantity. Usa un computed para mostrar el total dinámico. Ejemplo:</p>
+<div class="language-txt codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-txt codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token plain">Precio: 50</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Cantidad: 2</span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">Total: 100</span><br></span></code></pre></div></div>
+<p><em>Resultado esperado:</em></p>
+<ul>
+<li>Signal de precio y cantidad</li>
+<li><code>computed</code> para el total</li>
+<li>Template que actualice dinámicamente el total al cambiar valores</li>
+</ul>
+<p><em>Pistas o ayudas:</em></p>
+<ul>
+<li>Importa <code>computed</code> de <code>@angular/core</code> y recuerda que se recalcula automáticamente cuando cambian los signals dependientes.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="comunicación-entre-componentes-input-y-output">Comunicación entre componentes: <code>@Input</code> y <code>@Output</code><a href="#comunicación-entre-componentes-input-y-output" class="hash-link" aria-label="Enlace directo al comunicación-entre-componentes-input-y-output" title="Enlace directo al comunicación-entre-componentes-input-y-output">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reto-1-lista-dinámica-con-datos-hacia-y-desde-el-hijo">Reto 1: Lista dinámica con datos hacia y desde el hijo<a href="#reto-1-lista-dinámica-con-datos-hacia-y-desde-el-hijo" class="hash-link" aria-label="Enlace directo al Reto 1: Lista dinámica con datos hacia y desde el hijo" title="Enlace directo al Reto 1: Lista dinámica con datos hacia y desde el hijo">​</a></h3>
+<p><em>Nivel:</em> Medio</p>
+<p><em>Tiempo estimado de resolución:</em> 40 minutos</p>
+<p><em>Participantes:</em> Grupo de 3</p>
+<p><em>Enunciado:</em> Implementa un componente padre que tenga una lista de tareas y un componente hijo que muestre cada tarea:</p>
+<ul>
+<li>El padre envía la lista al hijo (<code>@Input</code>)</li>
+<li>El hijo emite un evento cuando el usuario borre una tarea (<code>@Output</code>)</li>
+<li>El padre actualiza la lista al recibir el evento</li>
+</ul>
+<p><em>Resultado esperado:</em></p>
+<ul>
+<li>Comunicación en dos vías: datos bajan (<code>@Input</code>), eventos suben (<code>@Output</code>)</li>
+<li>Lista dinámica funcional</li>
+</ul>
+<p><em>Pistas o ayudas:</em></p>
+<ul>
+<li>
+<p>Declara en el hijo:</p>
+<div class="language-ts codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-ts codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv codeBlockLinesWithNumbering_o6Pm" style="counter-reset:line-count 0"><span class="token-line codeLine_lJS_" style="color:#393A34"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token decorator at operator" style="color:#393A34">@</span><span class="token decorator function" style="color:#d73a49">Input</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> tasks</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token builtin">string</span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span></span><br></span><span class="token-line codeLine_lJS_" style="color:#393A34"><span class="codeLineNumber_Tfdd"></span><span class="codeLineContent_feaV"><span class="token plain"></span><span class="token decorator at operator" style="color:#393A34">@</span><span class="token decorator function" style="color:#d73a49">Output</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> remove </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">new</span><span class="token plain"> </span><span class="token class-name">EventEmitter</span><span class="token class-name operator" style="color:#393A34">&lt;</span><span class="token class-name builtin">number</span><span class="token class-name operator" style="color:#393A34">&gt;</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span></span><br></span></code></pre></div></div>
+</li>
+<li>
+<p>Puedes usar <code>input()</code> y <code>output()</code> para ajustarte a las versiones más recientes de Angular.</p>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reto-2-comunicación-entre-varios-niveles">Reto 2: Comunicación entre varios niveles<a href="#reto-2-comunicación-entre-varios-niveles" class="hash-link" aria-label="Enlace directo al Reto 2: Comunicación entre varios niveles" title="Enlace directo al Reto 2: Comunicación entre varios niveles">​</a></h3>
+<p><em>Nivel:</em> Avanzado</p>
+<p><em>Tiempo estimado de resolución:</em> 55 minutos</p>
+<p><em>Participantes:</em> Grupo de 4</p>
+<p><em>Enunciado:</em> Crea una estructura de 3 componentes anidados: <code>GrandParent</code>, <code>Parent</code> y <code>Child</code>.</p>
+<ul>
+<li><code>GrandParent</code> envía datos al <code>Child</code> usando <code>@Input</code> indirectamente a través del <code>Parent</code>.</li>
+<li><code>Child</code> emite un evento (<code>@Output</code>) hacia el <code>Parent</code>, y este a su vez lo propaga al <code>GrandParent</code>.</li>
+</ul>
+<p><em>Resultado esperado:</em></p>
+<ul>
+<li>Comunicación de datos descendente a través de múltiples niveles</li>
+<li>Eventos que se propagan hacia arriba</li>
+</ul>
+<p><em>Pistas o ayudas:</em></p>
+<ul>
+<li>Los decoradores no funcionan de forma automática en múltiples niveles. Debes “encadenar” los @Input y @Output en cada nivel.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="servicios-en-angular-e-inyección-de-dependencias">Servicios en Angular e Inyección de Dependencias<a href="#servicios-en-angular-e-inyección-de-dependencias" class="hash-link" aria-label="Enlace directo al Servicios en Angular e Inyección de Dependencias" title="Enlace directo al Servicios en Angular e Inyección de Dependencias">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reto-1-interfaces--clases--servicios-angular">Reto 1: Interfaces + Clases + Servicios Angular<a href="#reto-1-interfaces--clases--servicios-angular" class="hash-link" aria-label="Enlace directo al Reto 1: Interfaces + Clases + Servicios Angular" title="Enlace directo al Reto 1: Interfaces + Clases + Servicios Angular">​</a></h3>
+<p><em>Nivel:</em> Avanzado</p>
+<p><em>Tiempo estimado de resolución:</em> 50 minutos</p>
+<p><em>Participantes:</em> Grupo de 4</p>
+<p><em>Enunciado:</em> Crea una interfaz Task y una clase TaskService en Angular que:</p>
+<ul>
+<li>Defina un arreglo de tareas</li>
+<li>Permita agregar y obtener tareas</li>
+<li>Use tipado fuerte en todo momento</li>
+</ul>
+<p><em>Resultado esperado:</em></p>
+<ul>
+<li>Archivo <code>task.interface.ts</code> con el contrato</li>
+<li>Clase <code>TaskService</code> inyectable en Angular (<code>@Injectable</code>)</li>
+<li>Prueba en consola desde un componente mostrando tareas cargadas</li>
+</ul>
+<p><em>Pistas o ayudas:</em></p>
+<ul>
+<li>Recuerda cómo Angular maneja los servicios con <code>@Injectable</code> y la inyección de dependencias.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reto-2-servicio-con-lógica-de-negocio">Reto 2: Servicio con lógica de negocio<a href="#reto-2-servicio-con-lógica-de-negocio" class="hash-link" aria-label="Enlace directo al Reto 2: Servicio con lógica de negocio" title="Enlace directo al Reto 2: Servicio con lógica de negocio">​</a></h3>
+<p><em>Nivel:</em> Medio</p>
+<p><em>Tiempo estimado de resolución:</em> 40 minutos</p>
+<p><em>Participantes:</em> En parejas</p>
+<p><em>Enunciado:</em> Crea un servicio <code>CartService</code> que gestione un carrito de compras:</p>
+<ul>
+<li>Agregar productos</li>
+<li>Quitar productos</li>
+<li>Calcular el total</li>
+</ul>
+<p>Usa este servicio en dos componentes: uno para mostrar productos y otro para mostrar el carrito.</p>
+<p><em>Resultado esperado:</em></p>
+<ul>
+<li>Servicio inyectado en ambos componentes</li>
+<li>Métodos <code>addItem()</code>, <code>removeItem()</code> y <code>getTotal()</code></li>
+<li>Lista de productos compartida</li>
+</ul>
+<p><em>Pistas o ayudas:</em></p>
+<ul>
+<li>Usa <code>private cart: Product[] = []</code> dentro del servicio y expón solo lo necesario.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reto-3-servicio-http-con-httpclient">Reto 3: Servicio HTTP con HttpClient<a href="#reto-3-servicio-http-con-httpclient" class="hash-link" aria-label="Enlace directo al Reto 3: Servicio HTTP con HttpClient" title="Enlace directo al Reto 3: Servicio HTTP con HttpClient">​</a></h3>
+<p><em>Nivel:</em> Medio</p>
+<p><em>Tiempo estimado de resolución:</em> 45 minutos</p>
+<p><em>Participantes:</em> Grupo de 3</p>
+<p><em>Enunciado:</em> Implementa un servicio <code>UserService</code> que consulte usuarios de una API pública (<a href="https://jsonplaceholder.typicode.com/users" target="_blank" rel="noopener noreferrer">https://jsonplaceholder.typicode.com/users</a>).</p>
+<ul>
+<li>Métodos: <code>getUsers()</code>, <code>getUserById(id)</code></li>
+<li>Muestra la lista de usuarios en un componente usando el servicio</li>
+</ul>
+<p><em>Resultado esperado:</em></p>
+<ul>
+<li>Servicio inyectado correctamente con <code>HttpClient</code></li>
+<li>Llamadas asíncronas funcionales</li>
+<li>Template con datos renderizados</li>
+</ul>
+<p><em>Pistas o ayudas:</em></p>
+<ul>
+<li>Recuerda importar el <code>HttpClientModule</code> en el <code>bootstrapApplication</code> de Angular 20 o en el <code>AppModule</code> si lo usas en versiones anteriores.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reto-4-servicios--signals-estado-reactivo-global">Reto 4: Servicios + Signals (estado reactivo global)<a href="#reto-4-servicios--signals-estado-reactivo-global" class="hash-link" aria-label="Enlace directo al Reto 4: Servicios + Signals (estado reactivo global)" title="Enlace directo al Reto 4: Servicios + Signals (estado reactivo global)">​</a></h3>
+<p><em>Nivel:</em> Avanzado</p>
+<p><em>Tiempo estimado de resolución:</em> 55 minutos</p>
+<p><em>Participantes:</em> Grupo de 4</p>
+<p><em>Enunciado:</em> Crea un servicio <code>AuthService</code> que use signals para manejar el estado de autenticación:</p>
+<ul>
+<li><code>isAuthenticated: Signal&lt;boolean&gt;</code></li>
+<li>Método <code>login()</code> y <code>logout()</code> que actualicen el estado</li>
+<li>Componente de login que reactive el template según el estado</li>
+</ul>
+<p><em>Resultado esperado:</em></p>
+<ul>
+<li>Servicio inyectable con <code>signal</code> y métodos que actualicen el estado</li>
+<li>Componentes que reaccionen automáticamente a los cambios sin <code>Subject</code> ni <code>BehaviorSubject</code></li>
+</ul>
+<p><em>Pistas o ayudas:</em></p>
+<ul>
+<li>Usa <code>signal(false)</code> para inicializar el estado y <code>computed</code> o <code>effect</code> si necesitas derivar datos.</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="routing-en-angular-básico-y-avanzado">Routing en Angular (básico y avanzado)<a href="#routing-en-angular-básico-y-avanzado" class="hash-link" aria-label="Enlace directo al Routing en Angular (básico y avanzado)" title="Enlace directo al Routing en Angular (básico y avanzado)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reto-1-parámetros-en-la-ruta">Reto 1: Parámetros en la ruta<a href="#reto-1-parámetros-en-la-ruta" class="hash-link" aria-label="Enlace directo al Reto 1: Parámetros en la ruta" title="Enlace directo al Reto 1: Parámetros en la ruta">​</a></h3>
+<p><em>Nivel:</em> Básico</p>
+<p><em>Tiempo estimado:</em> 30 minutos</p>
+<p><em>Participantes:</em> En parejas</p>
+<p><em>Enunciado:</em> Implementa un componente <code>UserDetailComponent</code> que reciba el <strong>ID del usuario</strong> por parámetro en la URL (<code>/users/:id</code>).</p>
+<ul>
+<li>Debe mostrar el ID recibido</li>
+<li>Si el ID no existe, mostrar un mensaje de error</li>
+</ul>
+<p><em>Resultado esperado:</em></p>
+<ul>
+<li>Uso de <code>ActivatedRoute</code> para obtener el parámetro</li>
+<li>Navegación dinámica usando <code>routerLink</code> en un listado de usuarios</li>
+</ul>
+<p><em>Pistas o ayudas:</em></p>
+<ul>
+<li>Usa <code>route.paramMap.subscribe(...)</code> o el nuevo <code>route.paramMap().subscribe()</code> si usas signals.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reto-2-rutas-hijas-y-layout-común">Reto 2: Rutas hijas y layout común<a href="#reto-2-rutas-hijas-y-layout-común" class="hash-link" aria-label="Enlace directo al Reto 2: Rutas hijas y layout común" title="Enlace directo al Reto 2: Rutas hijas y layout común">​</a></h3>
+<p><em>Nivel:</em> Medio</p>
+<p><em>Tiempo estimado:</em> 40 minutos</p>
+<p><em>Participantes:</em> Grupo de 3</p>
+<p><em>Enunciado:</em> Crea un módulo de administración con un layout (<code>AdminLayoutComponent</code>) que contenga:</p>
+<ul>
+<li>Rutas hijas: <code>dashboard</code>, <code>users</code>, <code>settings</code></li>
+<li>Navbar y <code>&lt;router-outlet&gt;</code> compartidos en el layout</li>
+</ul>
+<p><em>Resultado esperado:</em></p>
+<ul>
+<li>Navegación <code>/admin/dashboard</code>, <code>/admin/users</code>, <code>/admin/settings</code></li>
+<li>Layout persistente mientras cambian las rutas hijas</li>
+</ul>
+<p><em>Pistas o ayudas:</em></p>
+<ul>
+<li>
+<p>Define las rutas así:</p>
+<div class="language-ts codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-ts codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  path</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;admin&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  component</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> AdminLayoutComponent</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  children</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">[</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"> path</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;dashboard&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> component</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> DashboardComponent </span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token operator" style="color:#393A34">...</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token punctuation" style="color:#393A34">]</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reto-3-lazy-loading-con-loadcomponent">Reto 3: Lazy Loading con loadComponent<a href="#reto-3-lazy-loading-con-loadcomponent" class="hash-link" aria-label="Enlace directo al Reto 3: Lazy Loading con loadComponent" title="Enlace directo al Reto 3: Lazy Loading con loadComponent">​</a></h3>
+<p><em>Nivel:</em> Avanzado</p>
+<p><em>Tiempo estimado:</em> 50 minutos</p>
+<p><em>Participantes:</em> Grupo de 4</p>
+<p><em>Enunciado:</em> Configura el <strong>lazy loading</strong> de un componente <code>ReportsComponent</code> que solo se cargue cuando el usuario navegue a <code>/reports</code>.</p>
+<p><em>Resultado esperado:</em></p>
+<ul>
+<li>Uso de <code>loadComponent</code> en lugar de <code>component</code> en la definición de la ruta</li>
+<li>Validación de que el bundle solo se carga al entrar a la ruta</li>
+</ul>
+<p><em>Pistas o ayudas:</em></p>
+<div class="language-ts codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-ts codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  path</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token string" style="color:#e3116c">&#x27;reports&#x27;</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token function-variable function" style="color:#d73a49">loadComponent</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token keyword" style="color:#00009f">import</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;./reports/reports.component&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">then</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">m </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"> m</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">ReportsComponent</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre></div></div>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reto-4-guards-y-protección-de-rutas">Reto 4: Guards y protección de rutas<a href="#reto-4-guards-y-protección-de-rutas" class="hash-link" aria-label="Enlace directo al Reto 4: Guards y protección de rutas" title="Enlace directo al Reto 4: Guards y protección de rutas">​</a></h3>
+<p><em>Nivel:</em> Avanzado</p>
+<p><em>Tiempo estimado:</em> 55 minutos</p>
+<p><em>Participantes:</em> Grupo de 4</p>
+<p><em>Enunciado:</em> Implementa un <strong>guard</strong> llamado <code>authGuard</code> que permita el acceso solo si el usuario está autenticado:</p>
+<ul>
+<li>Si el usuario no está autenticado, redirígelo a <code>/login</code></li>
+<li>Si está autenticado, permitir acceso a <code>/profile</code></li>
+</ul>
+<p><em>Resultado esperado:</em></p>
+<ul>
+<li>Función guard implementada con <code>inject(AuthService)</code></li>
+<li>Integración en el arreglo de rutas con <code>canActivate</code></li>
+</ul>
+<p><em>Pistas o ayudas:</em></p>
+<div class="language-ts codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-ts codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">export</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> authGuard</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token function-variable function" style="color:#d73a49">CanActivateFn</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">route</span><span class="token punctuation" style="color:#393A34">,</span><span class="token plain"> state</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> auth </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">inject</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">AuthService</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> auth</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">isAuthenticated</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">?</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">redirectUnauthorizedToLogin</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">;</span><br></span></code></pre></div></div>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="validación-de-formularios-sincrónica-y-asincrónica">Validación de formularios (sincrónica y asincrónica)<a href="#validación-de-formularios-sincrónica-y-asincrónica" class="hash-link" aria-label="Enlace directo al Validación de formularios (sincrónica y asincrónica)" title="Enlace directo al Validación de formularios (sincrónica y asincrónica)">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reto-1-validaciones-básicas-sincrónicas">Reto 1: Validaciones básicas sincrónicas<a href="#reto-1-validaciones-básicas-sincrónicas" class="hash-link" aria-label="Enlace directo al Reto 1: Validaciones básicas sincrónicas" title="Enlace directo al Reto 1: Validaciones básicas sincrónicas">​</a></h3>
+<p><em>Nivel:</em> Básico</p>
+<p><em>Tiempo estimado:</em> 30 minutos</p>
+<p><em>Participantes:</em> Individual</p>
+<p><em>Enunciado:</em> Crea un formulario de registro con los campos nombre, email y password.</p>
+<ul>
+<li>El <code>nombre</code> es requerido.</li>
+<li>El <code>email</code> debe ser válido.</li>
+<li>El <code>password</code> debe tener al menos 8 caracteres.</li>
+</ul>
+<p><em>Resultado esperado:</em></p>
+<ul>
+<li>Uso de <code>FormGroup</code> y validadores de Angular (<code>Validators.required</code>, <code>Validators.email</code>, <code>Validators.minLength</code>).</li>
+<li>Mensajes de error dinámicos en el template (<code>&lt;div *ngIf=&quot;control.errors?.required&quot;&gt;...</code>).</li>
+</ul>
+<p><em>Pistas o ayudas:</em></p>
+<ul>
+<li>Usa <code>ReactiveFormsModule</code> importado en tu componente standalone y formControlName en el template.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reto-2-validador-personalizado-de-contraseñas">Reto 2: Validador personalizado de contraseñas<a href="#reto-2-validador-personalizado-de-contraseñas" class="hash-link" aria-label="Enlace directo al Reto 2: Validador personalizado de contraseñas" title="Enlace directo al Reto 2: Validador personalizado de contraseñas">​</a></h3>
+<p><em>Nivel:</em> Básico</p>
+<p><em>Tiempo estimado:</em> 35 minutos</p>
+<p><em>Participantes:</em> En parejas</p>
+<p><em>Enunciado:</em> Extiende el formulario anterior agregando confirmación de contraseña (<code>confirmPassword</code>) con un <strong>validador sincrónico personalizado</strong> que verifique que ambas coincidan.</p>
+<p><em>Resultado esperado:</em></p>
+<ul>
+<li>Función validadora aplicada al <code>FormGroup</code> completo (no solo a un control).</li>
+<li>Mensaje de error cuando las contraseñas no coincidan.</li>
+</ul>
+<p><em>Pistas o ayudas:</em></p>
+<ul>
+<li>
+<p>Crea un validador como:</p>
+<div class="language-ts codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-ts codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">export</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">function</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">passwordsMatch</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">control</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> AbstractControl</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> pass </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> control</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">get</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;password&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token operator" style="color:#393A34">?.</span><span class="token plain">value</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">const</span><span class="token plain"> confirm </span><span class="token operator" style="color:#393A34">=</span><span class="token plain"> control</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">get</span><span class="token punctuation" style="color:#393A34">(</span><span class="token string" style="color:#e3116c">&#x27;confirmPassword&#x27;</span><span class="token punctuation" style="color:#393A34">)</span><span class="token operator" style="color:#393A34">?.</span><span class="token plain">value</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> pass </span><span class="token operator" style="color:#393A34">===</span><span class="token plain"> confirm </span><span class="token operator" style="color:#393A34">?</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">null</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"> passwordsMismatch</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">}</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reto-3-validación-asíncrona-de-usuario-existente">Reto 3: Validación asíncrona de usuario existente<a href="#reto-3-validación-asíncrona-de-usuario-existente" class="hash-link" aria-label="Enlace directo al Reto 3: Validación asíncrona de usuario existente" title="Enlace directo al Reto 3: Validación asíncrona de usuario existente">​</a></h3>
+<p><em>Nivel:</em> Medio</p>
+<p><em>Tiempo estimado:</em> 45 minutos</p>
+<p><em>Participantes:</em> Grupo de 3</p>
+<p><em>Enunciado:</em> Agrega un campo <code>username</code> al formulario. Este debe validarse contra una API simulada para verificar si el usuario ya existe.</p>
+<ul>
+<li>Si el usuario existe, muestra un error.</li>
+<li>Si no existe, permite continuar.</li>
+</ul>
+<p><em>Resultado esperado:</em></p>
+<ul>
+<li>Uso de validadores asíncronos con <code>AsyncValidatorFn</code>.</li>
+<li>Llamada a un <code>UserService</code> que devuelva un <code>Observable&lt;boolean&gt;</code>.</li>
+</ul>
+<p><em>Pistas o ayudas:</em></p>
+<ul>
+<li>
+<p>Usa <code>of()</code> y <code>delay()</code> de RxJS para simular la llamada HTTP:</p>
+<div class="language-ts codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-ts codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token keyword" style="color:#00009f">export</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">function</span><span class="token plain"> </span><span class="token function" style="color:#d73a49">usernameValidator</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">userService</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> UserService</span><span class="token punctuation" style="color:#393A34">)</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> AsyncValidatorFn </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">return</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">control</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> AbstractControl</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    userService</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">checkUserExists</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">control</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">value</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">pipe</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">      </span><span class="token function" style="color:#d73a49">map</span><span class="token punctuation" style="color:#393A34">(</span><span class="token plain">exists </span><span class="token operator" style="color:#393A34">=&gt;</span><span class="token plain"> exists </span><span class="token operator" style="color:#393A34">?</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"> userExists</span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token boolean" style="color:#36acaa">true</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">}</span><span class="token plain"> </span><span class="token operator" style="color:#393A34">:</span><span class="token plain"> </span><span class="token keyword" style="color:#00009f">null</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">    </span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"></span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre></div></div>
+</li>
+</ul>
+<h2 class="anchor anchorWithStickyNavbar_LWe7" id="manejo-de-estados-en-formularios">Manejo de estados en formularios<a href="#manejo-de-estados-en-formularios" class="hash-link" aria-label="Enlace directo al Manejo de estados en formularios" title="Enlace directo al Manejo de estados en formularios">​</a></h2>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reto-1-observando-el-estado-de-un-campo">Reto 1: Observando el estado de un campo<a href="#reto-1-observando-el-estado-de-un-campo" class="hash-link" aria-label="Enlace directo al Reto 1: Observando el estado de un campo" title="Enlace directo al Reto 1: Observando el estado de un campo">​</a></h3>
+<p><em>Nivel:</em> Básico</p>
+<p><em>Tiempo estimado:</em> 25 minutos</p>
+<p><em>Participantes:</em> Individual</p>
+<p><em>Enunciado:</em> Crea un formulario con un solo campo email y muestra en el template el estado actual de ese <code>FormControl</code>:</p>
+<ul>
+<li><code>touched</code> / <code>untouched</code></li>
+<li><code>dirty</code> / <code>pristine</code></li>
+<li><code>valid</code> / <code>invalid</code></li>
+</ul>
+<p><em>Resultado esperado:</em></p>
+<ul>
+<li>Template que reaccione a los cambios en tiempo real</li>
+<li>Uso de <code>formControl.status</code> y propiedades directas (<code>control.touched</code>, <code>control.dirty</code>)</li>
+</ul>
+<p><em>Pistas o ayudas:</em></p>
+<ul>
+<li>Usa <code>ReactiveFormsModule</code> y muestra los estados con <code>{{ emailControl.dirty }}</code>.</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reto-2-cambiando-estado-programáticamente">Reto 2: Cambiando estado programáticamente<a href="#reto-2-cambiando-estado-programáticamente" class="hash-link" aria-label="Enlace directo al Reto 2: Cambiando estado programáticamente" title="Enlace directo al Reto 2: Cambiando estado programáticamente">​</a></h3>
+<p><em>Nivel:</em> Básico</p>
+<p><em>Tiempo estimado:</em> 30 minutos</p>
+<p><em>Participantes:</em> En parejas</p>
+<p><em>Enunciado:</em> Agrega un segundo campo <code>password</code> al formulario y botones que permitan:</p>
+<ul>
+<li>Limpiar el campo (<code>reset()</code>)</li>
+<li>Marcarlo como touched manualmente (<code>markAsTouched()</code>)</li>
+<li>Deshabilitarlo y volverlo a habilitar (<code>disable()</code> / <code>enable()</code>)</li>
+</ul>
+<p><em>Resultado esperado:</em></p>
+<ul>
+<li>Control del estado desde el componente TS</li>
+<li>Template actualizado según los cambios</li>
+</ul>
+<p><em>Pistas o ayudas:</em></p>
+<ul>
+<li>
+<p>Crea métodos en el componente:</p>
+<div class="language-ts codeBlockContainer_Ckt0 theme-code-block" style="--prism-color:#393A34;--prism-background-color:#f6f8fa"><div class="codeBlockContent_QJqH"><pre tabindex="0" class="prism-code language-ts codeBlock_bY9V thin-scrollbar" style="color:#393A34;background-color:#f6f8fa"><code class="codeBlockLines_e6Vv"><span class="token-line" style="color:#393A34"><span class="token function" style="color:#d73a49">disablePassword</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token plain"> </span><span class="token punctuation" style="color:#393A34">{</span><span class="token plain"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain">  </span><span class="token keyword" style="color:#00009f">this</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">form</span><span class="token punctuation" style="color:#393A34">.</span><span class="token plain">controls</span><span class="token punctuation" style="color:#393A34">[</span><span class="token string" style="color:#e3116c">&#x27;password&#x27;</span><span class="token punctuation" style="color:#393A34">]</span><span class="token punctuation" style="color:#393A34">.</span><span class="token function" style="color:#d73a49">disable</span><span class="token punctuation" style="color:#393A34">(</span><span class="token punctuation" style="color:#393A34">)</span><span class="token punctuation" style="color:#393A34">;</span><span class="token plain"> </span><br></span><span class="token-line" style="color:#393A34"><span class="token plain"></span><span class="token punctuation" style="color:#393A34">}</span><br></span></code></pre></div></div>
+</li>
+</ul>
+<h3 class="anchor anchorWithStickyNavbar_LWe7" id="reto-3-estados-y-ux-mejorada-avance-visual">Reto 3: Estados y UX mejorada (avance visual)<a href="#reto-3-estados-y-ux-mejorada-avance-visual" class="hash-link" aria-label="Enlace directo al Reto 3: Estados y UX mejorada (avance visual)" title="Enlace directo al Reto 3: Estados y UX mejorada (avance visual)">​</a></h3>
+<p><em>Nivel:</em> Avanzado</p>
+<p><em>Tiempo estimado:</em> 55 minutos</p>
+<p><em>Participantes:</em> Grupo de 4</p>
+<p><em>Enunciado:</em></p>
+<p>Implementa un formulario de registro que muestre indicadores visuales según el estado de los campos:</p>
+<ul>
+<li>Bordes rojos para inválidos</li>
+<li>Bordes verdes para válidos</li>
+<li>Icono de “cargando” cuando el control esté <code>pending</code> por validación asíncrona</li>
+<li>Además, agrega un <code>progress bar</code> que muestre el porcentaje de campos completados correctamente.</li>
+</ul>
+<p><em>Resultado esperado:</em></p>
+<ul>
+<li>Uso de <code>[ngClass]</code> y estados <code>control.valid</code>, <code>control.invalid</code>, <code>control.pending</code></li>
+<li>Barra de progreso dinámica calculada en el componente</li>
+</ul>
+<p><em>Pistas o ayudas:</em></p>
+<ul>
+<li>Itera sobre <code>form.controls</code> para contar cuántos están válidos y calcular el porcentaje.</li>
+</ul></div><footer class="theme-doc-footer docusaurus-mt-lg"><div class="row margin-top--sm theme-doc-footer-edit-meta-row"><div class="col"><a href="https://github.com/facebook/docusaurus/tree/main/packages/create-docusaurus/templates/shared/docs/03_angular_from_scratch/15_exercise.md" target="_blank" rel="noopener noreferrer" class="theme-edit-this-page"><svg fill="currentColor" height="20" width="20" viewBox="0 0 40 40" class="iconEdit_Z9Sw" aria-hidden="true"><g><path d="m34.5 11.7l-3 3.1-6.3-6.3 3.1-3q0.5-0.5 1.2-0.5t1.1 0.5l3.9 3.9q0.5 0.4 0.5 1.1t-0.5 1.2z m-29.5 17.1l18.4-18.5 6.3 6.3-18.4 18.4h-6.3v-6.2z"></path></g></svg>Editar esta página</a></div><div class="col lastUpdated_JAkA"></div></div></footer></article><nav class="docusaurus-mt-lg pagination-nav" aria-label="Página del documento"><a class="pagination-nav__link pagination-nav__link--prev" href="/Software_Construction/docs/angular_from_scratch/state_management_in_forms"><div class="pagination-nav__sublabel">Anterior</div><div class="pagination-nav__label">Manejo de estados en formularios</div></a><a class="pagination-nav__link pagination-nav__link--next" href="/Software_Construction/docs/category/nestjs-y-backend-moderno"><div class="pagination-nav__sublabel">Siguiente</div><div class="pagination-nav__label">NestJS y Backend moderno</div></a></nav></div></div><div class="col col--3"><div class="tableOfContents_bqdL thin-scrollbar theme-doc-toc-desktop"><ul class="table-of-contents table-of-contents__left-border"><li><a href="#typescript-para-angular-tipos-interfaces-clases" class="table-of-contents__link toc-highlight">TypeScript para Angular: tipos, interfaces, clases</a><ul><li><a href="#reto-1-clases-en-acción-angular-friendly" class="table-of-contents__link toc-highlight">Reto 1: Clases en acción (Angular-friendly)</a></li></ul></li><li><a href="#signals" class="table-of-contents__link toc-highlight">Signals</a><ul><li><a href="#reto-1-tu-primer-signal" class="table-of-contents__link toc-highlight">Reto 1: Tu primer signal</a></li><li><a href="#reto-2-signals--computed" class="table-of-contents__link toc-highlight">Reto 2: Signals + computed</a></li></ul></li><li><a href="#comunicación-entre-componentes-input-y-output" class="table-of-contents__link toc-highlight">Comunicación entre componentes: <code>@Input</code> y <code>@Output</code></a><ul><li><a href="#reto-1-lista-dinámica-con-datos-hacia-y-desde-el-hijo" class="table-of-contents__link toc-highlight">Reto 1: Lista dinámica con datos hacia y desde el hijo</a></li><li><a href="#reto-2-comunicación-entre-varios-niveles" class="table-of-contents__link toc-highlight">Reto 2: Comunicación entre varios niveles</a></li></ul></li><li><a href="#servicios-en-angular-e-inyección-de-dependencias" class="table-of-contents__link toc-highlight">Servicios en Angular e Inyección de Dependencias</a><ul><li><a href="#reto-1-interfaces--clases--servicios-angular" class="table-of-contents__link toc-highlight">Reto 1: Interfaces + Clases + Servicios Angular</a></li><li><a href="#reto-2-servicio-con-lógica-de-negocio" class="table-of-contents__link toc-highlight">Reto 2: Servicio con lógica de negocio</a></li><li><a href="#reto-3-servicio-http-con-httpclient" class="table-of-contents__link toc-highlight">Reto 3: Servicio HTTP con HttpClient</a></li><li><a href="#reto-4-servicios--signals-estado-reactivo-global" class="table-of-contents__link toc-highlight">Reto 4: Servicios + Signals (estado reactivo global)</a></li></ul></li><li><a href="#routing-en-angular-básico-y-avanzado" class="table-of-contents__link toc-highlight">Routing en Angular (básico y avanzado)</a><ul><li><a href="#reto-1-parámetros-en-la-ruta" class="table-of-contents__link toc-highlight">Reto 1: Parámetros en la ruta</a></li><li><a href="#reto-2-rutas-hijas-y-layout-común" class="table-of-contents__link toc-highlight">Reto 2: Rutas hijas y layout común</a></li><li><a href="#reto-3-lazy-loading-con-loadcomponent" class="table-of-contents__link toc-highlight">Reto 3: Lazy Loading con loadComponent</a></li><li><a href="#reto-4-guards-y-protección-de-rutas" class="table-of-contents__link toc-highlight">Reto 4: Guards y protección de rutas</a></li></ul></li><li><a href="#validación-de-formularios-sincrónica-y-asincrónica" class="table-of-contents__link toc-highlight">Validación de formularios (sincrónica y asincrónica)</a><ul><li><a href="#reto-1-validaciones-básicas-sincrónicas" class="table-of-contents__link toc-highlight">Reto 1: Validaciones básicas sincrónicas</a></li><li><a href="#reto-2-validador-personalizado-de-contraseñas" class="table-of-contents__link toc-highlight">Reto 2: Validador personalizado de contraseñas</a></li><li><a href="#reto-3-validación-asíncrona-de-usuario-existente" class="table-of-contents__link toc-highlight">Reto 3: Validación asíncrona de usuario existente</a></li></ul></li><li><a href="#manejo-de-estados-en-formularios" class="table-of-contents__link toc-highlight">Manejo de estados en formularios</a><ul><li><a href="#reto-1-observando-el-estado-de-un-campo" class="table-of-contents__link toc-highlight">Reto 1: Observando el estado de un campo</a></li><li><a href="#reto-2-cambiando-estado-programáticamente" class="table-of-contents__link toc-highlight">Reto 2: Cambiando estado programáticamente</a></li><li><a href="#reto-3-estados-y-ux-mejorada-avance-visual" class="table-of-contents__link toc-highlight">Reto 3: Estados y UX mejorada (avance visual)</a></li></ul></li></ul></div></div></div></div></main></div></div></div><footer class="theme-layout-footer footer footer--dark"><div class="container container-fluid"><div class="row footer__links"><div class="theme-layout-footer-column col footer__col"><div class="footer__title">Docs</div><ul class="footer__items clean-list"><li class="footer__item"><a class="footer__link-item" href="/Software_Construction/docs/intro">Tutorial</a></li></ul></div><div class="theme-layout-footer-column col footer__col"><div class="footer__title">More</div><ul class="footer__items clean-list"><li class="footer__item"><a href="https://carlos-paezf.github.io/Data_Structures" target="_blank" rel="noopener noreferrer" class="footer__link-item">Data Structures<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://carlos-paezf.github.io/Object_Oriented_Programming_Intersemester" target="_blank" rel="noopener noreferrer" class="footer__link-item">Object Oriented Programming Intersemester<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li><li class="footer__item"><a href="https://carlos-paezf.github.io/JS_and_TS_In-depth_Elective" target="_blank" rel="noopener noreferrer" class="footer__link-item">JS and TS In-depth Elective<svg width="13.5" height="13.5" aria-hidden="true" class="iconExternalLink_nPIU"><use href="#theme-svg-external-link"></use></svg></a></li></ul></div></div><div class="footer__bottom text--center"><div class="footer__copyright">Copyright © 2025. @carlos-paezf. Built with Docusaurus.</div></div></div></footer></div>
+</body>
+</html>
